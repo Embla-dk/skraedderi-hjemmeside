@@ -1,0 +1,17 @@
+# Alle søgemaskiner og AI-assistenter er velkomne
+User-agent: *
+Allow: /
+
+# AI-crawlere (nævnt eksplicit, så det er utvetydigt)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://skraedderi.dk/sitemap.xml

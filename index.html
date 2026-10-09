@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skrædderi – opgavestyring og planlægning til skrædderier</title>
+<meta name="description" content="Skrædderi er et dansk planlægningsværktøj til skrædderier og systuer. Scan sedlen, få en færdigdato med det samme, og send kunden en SMS, når tøjet er klar. Prøv gratis i 30 dage.">
+<link rel="canonical" href="https://skraedderi.dk/">
+<meta name="theme-color" content="#2C2825">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="da_DK">
+<meta property="og:site_name" content="Skrædderi">
+<meta property="og:title" content="Skrædderi – opgavestyring til skrædderier">
+<meta property="og:description" content="Scan sedlen, få en færdigdato med det samme, og send kunden en SMS, når tøjet er klar.">
+<meta property="og:url" content="https://skraedderi.dk/">
+<meta property="og:image" content="https://skraedderi.dk/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/playfair-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/dm-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://skraedderi.dk/#org",
+      "name": "Skrædderi",
+      "url": "https://skraedderi.dk/",
+      "logo": "https://skraedderi.dk/apple-touch-icon.png",
+      "email": "hej@skraedderi.dk",
+      "areaServed": "DK"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://skraedderi.dk/#website",
+      "url": "https://skraedderi.dk/",
+      "name": "Skrædderi",
+      "inLanguage": "da-DK",
+      "publisher": { "@id": "https://skraedderi.dk/#org" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://skraedderi.dk/#app",
+      "name": "Skrædderi",
+      "description": "Webapp til opgavestyring i skrædderier og systuer: automatisk færdigdato ud fra værkstedets kapacitet, statusfarver, kalender med fravær, scanning af håndskrevne sedler, stopur og SMS til kunden.",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Opgavestyring til skrædderier",
+      "operatingSystem": "Web, iOS, Android, Windows, macOS",
+      "inLanguage": "da",
+      "url": "https://skraedderi.dk/",
+      "publisher": { "@id": "https://skraedderi.dk/#org" },
+      "offers": {
+        "@type": "Offer",
+        "price": "249",
+        "priceCurrency": "DKK",
+        "description": "Pr. måned ekskl. moms. 30 dages gratis prøveperiode.",
+        "url": "https://skraedderi.dk/#pris"
+      },
+      "featureList": [
+        "To spor: projektopgaver og lynopgaver",
+        "Automatisk beregnet færdigdato",
+        "Statusfarver: reserveret, på skema, følg med, kritisk",
+        "Kalender med 14-dages- og månedsoverblik",
+        "Registrering af fravær",
+        "Scanning af håndskrevne opgavesedler",
+        "Stopur og tidsregistrering",
+        "SMS-skabelon til kunden",
+        "Virker offline"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Hvad er Skrædderi?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Skrædderi er en dansk webapp til opgavestyring i skrædderier og systuer. Den holder styr på alle ændrings- og syopgaver, beregner automatisk hvornår hver opgave er færdig ud fra værkstedets kapacitet, og gør det nemt at give kunden besked på SMS." } },
+        { "@type": "Question", "name": "Skal jeg installere noget?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nej. Skrædderi kører i browseren på telefon, tablet og computer. På telefonen kan du lægge den på hjemmeskærmen, så den åbner som en almindelig app." } },
+        { "@type": "Question", "name": "Hvordan beregnes færdigdatoen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Appen kender hvor mange timer værkstedet har hver dag til henholdsvis projektopgaver og lynopgaver. Når du opretter en opgave med et tidsestimat, finder appen den første dag, hvor der er plads, og trækker registreret fravær fra." } },
+        { "@type": "Question", "name": "Hvordan virker scanning af sedler?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tag et billede af den håndskrevne opgaveseddel. Appen læser navn, telefon, ydelse, tidsestimat, pris, deadline og noter og udfylder formularen. Du retter eventuelle fejl og godkender. Billedet læses direkte i browseren." } },
+        { "@type": "Question", "name": "Sender appen SMS automatisk?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nej. Når en opgave er færdig, åbner ét tryk telefonens egen SMS-app med en færdigskrevet besked ud fra din skabelon. Du sender selv, og der er ingen ekstra SMS-gebyrer." } },
+        { "@type": "Question", "name": "Virker Skrædderi uden internet?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Opgaver du opretter uden forbindelse, gemmes på enheden og synkroniseres automatisk, når forbindelsen er tilbage." } },
+        { "@type": "Question", "name": "Hvad koster Skrædderi?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Skrædderi koster 249 kr. om måneden ekskl. moms. De første 30 dage er gratis." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#indhold">Spring til indhold</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="/" class="logo" aria-label="Skrædderi – forside">Skrædderi</a>
+    <nav aria-label="Hovedmenu">
+      <a href="#funktioner">Funktioner</a>
+      <a href="#pris">Pris</a>
+      <a href="#faq">Spørgsmål</a>
+      <a href="https://app.skraedderi.dk/" class="nav-login">Log ind</a>
+      <a href="https://app.skraedderi.dk/signup" class="btn btn-small">Prøv gratis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="indhold">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Opgavestyring til skrædderier</p>
+        <h1>Ved altid, hvornår tøjet er <em>færdigt</em>.</h1>
+        <p class="lead">Skrædderi planlægger værkstedets ændrings- og syopgaver for dig. Scan sedlen, få en færdigdato med det samme, og send kunden en SMS, når tøjet kan hentes.</p>
+        <div class="hero-cta">
+          <a href="https://app.skraedderi.dk/signup" class="btn">Prøv gratis i 30 dage</a>
+          <a href="#funktioner" class="link-arrow">Se hvordan det virker</a>
+        </div>
+      </div>
+
+      <!-- Illustration af appen -->
+      <div class="phone" aria-hidden="true">
+        <div class="phone-screen">
+          <div class="ph-head">
+            <div class="ph-title">Overblik</div>
+            <div class="ph-tabs"><span class="on">Overblik</span><span>Ny opgave</span><span>Kalender</span></div>
+          </div>
+          <div class="ph-body">
+            <div class="ph-day">I dag <span>Projekter</span></div>
+            <div class="card st-green">
+              <div class="c-top"><b>Brudekjole, ombygning</b><i>#112</i></div>
+              <div class="c-sub">Sofie L. · deadline fre.</div>
+              <div class="bar"><span style="width:62%"></span></div>
+              <div class="c-row"><small>5 / 8 t</small><em>På skema</em></div>
+            </div>
+            <div class="card st-yellow">
+              <div class="c-top"><b>Jakkesæt, indsyning</b><i>#118</i></div>
+              <div class="c-sub">Anders K. · deadline tor.</div>
+              <div class="bar"><span style="width:30%"></span></div>
+              <div class="c-row"><small>1,5 / 5 t</small><em>Følg med</em></div>
+            </div>
+            <div class="card st-blue">
+              <div class="c-top"><b>Frakke, nyt for</b><i>#121</i></div>
+              <div class="c-sub">Mette H.</div>
+              <div class="bar"><span style="width:0"></span></div>
+              <div class="c-row"><small>0 / 4 t</small><em>Reserveret</em></div>
+            </div>
+            <div class="ph-stats">
+              <div class="dark"><small>Projekter booket til</small><b>24. okt.</b></div>
+              <div><small>Lynopgaver booket til</small><b>14. okt.</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SÅDAN VIRKER DET -->
+  <section class="steps" aria-labelledby="steps-h">
+    <div class="wrap">
+      <h2 id="steps-h" class="section-title">Fra seddel til afhentning</h2>
+      <ol class="step-list">
+        <li>
+          <span class="step-no">1</span>
+          <h3>Scan sedlen</h3>
+          <p>Tag et billede af den håndskrevne opgaveseddel. Navn, telefon, ydelse, tid og pris bliver udfyldt for dig.</p>
+        </li>
+        <li>
+          <span class="step-no">2</span>
+          <h3>Få en færdigdato</h3>
+          <p>Appen finder den første ledige plads i kalenderen og fortæller dig, hvornår opgaven er færdig, mens kunden står ved disken.</p>
+        </li>
+        <li>
+          <span class="step-no">3</span>
+          <h3>Giv kunden besked</h3>
+          <p>Når opgaven er afsluttet, åbner ét tryk en færdigskrevet SMS med dine åbningstider og adresse.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FUNKTIONER -->
+  <section id="funktioner" class="features" aria-labelledby="feat-h">
+    <div class="wrap">
+      <h2 id="feat-h" class="section-title">Alt, et værksted har brug for. Intet andet.</h2>
+      <div class="feature-grid">
+        <article>
+          <h3>To spor</h3>
+          <p>Store projektopgaver og hurtige lynopgaver planlægges hver for sig, på de dage du har sat af til dem. Lynopgaverne bliver ikke klemt af en brudekjole.</p>
+        </article>
+        <article>
+          <h3>Automatisk færdigdato</h3>
+          <p>Ud fra tidsestimatet og værkstedets ledige timer beregner appen, hvornår opgaven er klar. Du lover kun det, du kan holde.</p>
+        </article>
+        <article>
+          <h3>Status med ét blik</h3>
+          <p>Hver opgave har en farve: <span class="dot d-blue"></span>reserveret, <span class="dot d-green"></span>på skema, <span class="dot d-yellow"></span>følg med og <span class="dot d-red"></span>kritisk. Du ser straks, hvad der haster.</p>
+        </article>
+        <article>
+          <h3>Kalender og fravær</h3>
+          <p>Se de næste 14 dage eller hele måneden. Markér ferie, en halv fridag eller sygdom, så rykker planen sig af sig selv.</p>
+        </article>
+        <article>
+          <h3>Stopur og timer</h3>
+          <p>Start stopuret, når du går i gang, eller registrér timer bagefter. Du ser, hvor meget der er tilbage, og om estimatet holder.</p>
+        </article>
+        <article>
+          <h3>Virker overalt, også offline</h3>
+          <p>Telefon, tablet eller computer. Uden internet gemmes opgaverne lokalt og synkroniseres, når forbindelsen er tilbage.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITAT / OPRINDELSE -->
+  <section class="origin">
+    <div class="wrap narrow">
+      <p class="origin-text">Skrædderi er udviklet sammen med et dansk skrædderværksted og bruges hver dag i driften. Den er lavet til skrædderens hverdag med sedler ved disken, deadlines på festtøj og kunder, der vil vide, hvornår de kan hente.</p>
+    </div>
+  </section>
+
+  <!-- PRIS -->
+  <section id="pris" class="pricing" aria-labelledby="pris-h">
+    <div class="wrap narrow">
+      <h2 id="pris-h" class="section-title">Én pris. Alt inkluderet.</h2>
+      <div class="price-card">
+        <!-- PLADSHOLDER: ret prisen her, i JSON-LD øverst, i FAQ og i llms.txt -->
+        <p class="price"><span class="amount">249 kr.</span> <span class="per">/ måned ekskl. moms</span></p>
+        <p class="trial">De første 30 dage er gratis.</p>
+        <ul class="included">
+          <li>Ubegrænset antal opgaver</li>
+          <li>Scanning af håndskrevne sedler</li>
+          <li>Automatisk planlægning og kalender</li>
+          <li>SMS-skabelon til kunderne</li>
+          <li>Telefon, tablet og computer</li>
+          <li>Dansk support</li>
+        </ul>
+        <a href="https://app.skraedderi.dk/signup" class="btn btn-block">Start gratis prøveperiode</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq" aria-labelledby="faq-h">
+    <div class="wrap narrow">
+      <h2 id="faq-h" class="section-title">Spørgsmål og svar</h2>
+
+      <details>
+        <summary>Hvad er Skrædderi?</summary>
+        <p>Skrædderi er en dansk webapp til opgavestyring i skrædderier og systuer. Den holder styr på alle ændrings- og syopgaver, beregner automatisk hvornår hver opgave er færdig ud fra værkstedets kapacitet, og gør det nemt at give kunden besked på SMS.</p>
+      </details>
+      <details>
+        <summary>Skal jeg installere noget?</summary>
+        <p>Nej. Skrædderi kører i browseren på telefon, tablet og computer. På telefonen kan du lægge den på hjemmeskærmen, så den åbner som en almindelig app.</p>
+      </details>
+      <details>
+        <summary>Hvordan beregnes færdigdatoen?</summary>
+        <p>Appen kender hvor mange timer værkstedet har hver dag til henholdsvis projektopgaver og lynopgaver. Når du opretter en opgave med et tidsestimat, finder appen den første dag, hvor der er plads, og trækker registreret fravær fra.</p>
+      </details>
+      <details>
+        <summary>Hvordan virker scanning af sedler?</summary>
+        <p>Tag et billede af den håndskrevne opgaveseddel. Appen læser navn, telefon, ydelse, tidsestimat, pris, deadline og noter og udfylder formularen. Du retter eventuelle fejl og godkender. Billedet læses direkte i browseren.</p>
+      </details>
+      <details>
+        <summary>Sender appen SMS automatisk?</summary>
+        <p>Nej. Når en opgave er færdig, åbner ét tryk telefonens egen SMS-app med en færdigskrevet besked ud fra din skabelon. Du sender selv, og der er ingen ekstra SMS-gebyrer.</p>
+      </details>
+      <details>
+        <summary>Virker Skrædderi uden internet?</summary>
+        <p>Ja. Opgaver du opretter uden forbindelse, gemmes på enheden og synkroniseres automatisk, når forbindelsen er tilbage.</p>
+      </details>
+      <details>
+        <summary>Hvad koster Skrædderi?</summary>
+        <p>Skrædderi koster 249 kr. om måneden ekskl. moms. De første 30 dage er gratis.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- AFSLUTNING -->
+  <section class="final-cta">
+    <div class="wrap narrow">
+      <h2>Få styr på værkstedet i dag.</h2>
+      <p>Opret en konto på et par minutter og prøv Skrædderi gratis i 30 dage.</p>
+      <a href="https://app.skraedderi.dk/signup" class="btn btn-light">Prøv gratis</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="logo">Skrædderi</div>
+      <p>Opgavestyring til skrædderier og systuer.</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:hej@skraedderi.dk">hej@skraedderi.dk</a>
+      <a href="/privatliv">Privatlivspolitik</a>
+      <a href="https://app.skraedderi.dk/">Log ind</a>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Skrædderi</div>
+</footer>
+
+</body>
+</html>

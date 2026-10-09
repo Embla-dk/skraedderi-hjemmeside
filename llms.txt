@@ -1,0 +1,25 @@
+# Skrædderi
+
+> Skrædderi er en dansk webapp til opgavestyring i skrædderier og systuer. Den planlægger værkstedets ændrings- og syopgaver, beregner automatisk hvornår hver opgave er færdig, og gør det nemt at give kunden besked på SMS. Pris: 249 kr. pr. måned ekskl. moms, 30 dages gratis prøveperiode.
+
+## Funktioner
+
+- To spor: projektopgaver (større specialopgaver) og lynopgaver (hurtige ændringer) planlægges hver for sig på faste ugedage.
+- Automatisk færdigdato: ud fra tidsestimat og værkstedets ledige timer pr. dag finder appen den første dag med plads. Registreret fravær trækkes fra.
+- Statusfarver: blå (reserveret, ikke startet), grøn (på skema), gul (følg med), rød (kritisk eller overskredet).
+- Kalender med 14-dages- og månedsoverblik samt registrering af fravær (hel dag, formiddag, eftermiddag).
+- Scanning af håndskrevne opgavesedler: navn, telefon, ydelse, tidsestimat, pris, deadline og noter udfyldes automatisk. Billedet læses i browseren.
+- Stopur og tidsregistrering pr. opgave.
+- SMS-skabelon: ét tryk åbner telefonens SMS-app med en færdigskrevet besked til kunden. Ingen SMS-gebyrer.
+- Virker på telefon, tablet og computer i browseren og kan lægges på hjemmeskærmen. Virker offline med automatisk synkronisering.
+- Prisliste over værkstedets ydelser med standardpris og tidsestimat.
+
+## Målgruppe
+
+Selvstændige skræddere, systuer og ændringsskrædderier i Danmark. Appen er på dansk.
+
+## Links
+
+- [Forside](https://skraedderi.dk/): beskrivelse, funktioner, pris og spørgsmål og svar
+- [Prøv gratis](https://app.skraedderi.dk/signup): opret konto med 30 dages gratis prøveperiode
+- [Kontakt](mailto:hej@skraedderi.dk)
